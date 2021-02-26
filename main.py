@@ -1,16 +1,16 @@
-# This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+import turtle as t
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+tim = t.Turtle()
+
+########### Challenge 2 - Draw a Dashed Line ########
+screen = t.Screen()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+tim.shape("arrow")
+for i in range(20):
+    tim.forward(10)
+    tim.penup()
+    tim.forward(5)
+    tim.pendown()
+screen.exitonclick()
